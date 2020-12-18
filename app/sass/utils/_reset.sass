@@ -1,0 +1,100 @@
+@import 'vars'
+
+html, body
+  height: 100%
+
+body
+  margin: 0
+  font-family: $mainFont, Helvetica, Arial, sans-serif
+  font-size: 16px
+  line-height: normal
+  font-weight: normal
+  color: #000
+
+.container
+  max-width: 870px
+  margin-left: auto
+  margin-right: auto
+  padding-left: 10px
+  padding-right: 10px
+  @media only screen and (max-width: 991px)
+    max-width: 650px
+    padding-left: 0
+    padding-right: 0
+  @media only screen and (max-width: 767px)
+    padding-left: 18px
+    padding-right: 18px
+
+// Default
+*, *:before, *:after
+  box-sizing: border-box
+
+*:focus
+  outline: 0
+
+// List
+ul, li
+  list-style-type: none
+  margin: 0
+  padding: 0
+
+// Links
+a
+  text-decoration: none
+  transition: 0.3s
+  color: #798EB1
+  &:hover
+    color: #2b5290
+
+  &:active, &:hover
+    outline: 0
+
+// Headlines
+h1, h2, h3, h4, h5, h6
+  line-height: 1
+  margin: 0
+  font-weight: bold
+
+img
+  max-width: 100%
+  height: auto
+  border: none
+
+input, textarea, select, button
+  outline: none
+
+button
+  cursor: pointer
+
+textarea
+  resize: none
+  overflow: auto
+  box-shadow: none
+
+select
+  -webkit-appearance: none
+  -moz-appearance: none
+  appearance: none
+
+select::-ms-expand
+  display: none
+
+// Chrome/Opera/Safari
+::-webkit-input-placeholder
+  color: rgb(171, 171, 171)
+  font-size: 16px
+
+// Firefox 19+
+::-moz-placeholder
+  color: rgb(171, 171, 171)
+  font-size: 16px
+
+// Firefox 18-
+::-moz-placeholder
+  color: rgb(171, 171, 171)
+  font-size: 16px
+
+// IE 10+
+::-ms-input-placeholder
+  color: rgb(171, 171, 171)
+  font-size: 16px
